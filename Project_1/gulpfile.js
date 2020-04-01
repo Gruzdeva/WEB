@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const sass = require ("gulp-sass");
 const uglifyjs = require("gulp-uglifyjs");
 const browsersync = require("browser-sync").create();
-//const watch = require ('gulp-watch');
+// const watch = require ('gulp-watch');
 
 
 const gulpConfig = {
@@ -59,7 +59,7 @@ function buildHtml(){
 //     })
 // })
 
-function browsersync(){
+function browserSync(){
     browserSync.init({
         server: {
             baseDir: gulpConfig.path.dest.html //Почему html???
@@ -80,8 +80,6 @@ function watch(){
     gulp.watch(gulpConfig.path.watch.js);
     gulp.watch(gulpConfig.path.watch.src.images);
 }
-
-
 
 exports.sass = buildSass;
 exports.js = buildJs;
