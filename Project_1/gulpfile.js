@@ -11,13 +11,13 @@ const gulpConfig = {
             html : "./dev/*.html",
             sass : "./dev/assets/sass/main.scss",
             js : "./dev/assets/js/main.js",
-            images : "./dev/assets/images/**/*",
+            images : "./dev/assets/images/**/*.*",
         },
         dest : {
             html : "./dest/",
             css : "./dest/assets/css",
             js : "./dest/assets/js",
-            images : "./dst/assets/images",
+            images : "./dest/assets/images/**/*.*",
         },
         watch : {
             html: "./dev/**/*.html",
@@ -51,20 +51,35 @@ function buildHtml(){
         .pipe(gulp.dest(gulpConfig.path.dest.html));
 };
 
-gulp.task('browser-sync', function(){
+// gulp.task('browser-sync', function(){
+//     browserSync.init({
+//         server: {
+//             baseDir: gulpConfig.path.dest.html //Почему html???
+//         }
+//     })
+// })
+
+function browsersync(){
     browserSync.init({
         server: {
             baseDir: gulpConfig.path.dest.html //Почему html???
         }
     })
-})
+}
 
-gulp.task('watch', function(){
+// gulp.task('watch', function(){
+//     gulp.watch(gulpConfig.path.watch.html);
+//     gulp.watch(gulpConfig.path.watch.sass);
+//     gulp.watch(gulpConfig.path.watch.js);
+//     gulp.watch(gulpConfig.path.watch.src.images);
+// })
+
+function watch(){
     gulp.watch(gulpConfig.path.watch.html);
     gulp.watch(gulpConfig.path.watch.sass);
     gulp.watch(gulpConfig.path.watch.js);
     gulp.watch(gulpConfig.path.watch.src.images);
-})
+}
 
 
 
