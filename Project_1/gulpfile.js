@@ -2,8 +2,6 @@ const gulp = require("gulp");
 const sass = require ("gulp-sass");
 const uglifyjs = require("gulp-uglifyjs");
 const browsersync = require("browser-sync").create();
-// const watch = require ('gulp-watch');
-
 
 const gulpConfig = {
     path : {
@@ -51,34 +49,19 @@ function buildHtml(){
         .pipe(gulp.dest(gulpConfig.path.dest.html));
 };
 
-// gulp.task('browser-sync', function(){
-//     browserSync.init({
-//         server: {
-//             baseDir: gulpConfig.path.dest.html //Почему html???
-//         }
-//     })
-// })
-
 function browserSync(){
     browserSync.init({
         server: {
-            baseDir: gulpConfig.path.dest.html //Почему html???
+            baseDir: gulpConfig.path.dest.html 
         }
     })
 }
-
-// gulp.task('watch', function(){
-//     gulp.watch(gulpConfig.path.watch.html);
-//     gulp.watch(gulpConfig.path.watch.sass);
-//     gulp.watch(gulpConfig.path.watch.js);
-//     gulp.watch(gulpConfig.path.watch.src.images);
-// })
 
 function watch(){
     gulp.watch(gulpConfig.path.watch.html);
     gulp.watch(gulpConfig.path.watch.sass);
     gulp.watch(gulpConfig.path.watch.js);
-    gulp.watch(gulpConfig.path.watch.src.images);
+    gulp.watch(gulpConfig.path.watch.images);
 }
 
 exports.sass = buildSass;
