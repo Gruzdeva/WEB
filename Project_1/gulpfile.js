@@ -26,7 +26,6 @@ const gulpConfig = {
     },
 };
 
-
 function buildSass(){
     return gulp.src(gulpConfig.path.dev.sass)
         .pipe(sass())
@@ -49,13 +48,18 @@ function buildHtml(){
         .pipe(gulp.dest(gulpConfig.path.dest.html));
 };
 
-function browserSync(){
+function browserSync(done){
     browserSync.init({
         server: {
             baseDir: gulpConfig.path.dest.html 
         }
     })
 }
+
+function reload(done) {
+    browsersync.reload();
+    done();
+};
 
 function watch(){
     gulp.watch(gulpConfig.path.watch.html);

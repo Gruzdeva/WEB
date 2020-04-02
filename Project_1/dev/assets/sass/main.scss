@@ -97,90 +97,153 @@ video{outline: none;}
                         border: none;
                         margin-top: 5%;
                         cursor: pointer;
+
+                    &{
+                        position: relative;
+                        display: inline-block;
+                        // padding: 15px 30px;
+                        color: #0b304e;
+                        text-transform: uppercase;
+                        letter-spacing: 4px;
+                        text-decoration: none;
+                        // font-size: 24px;
+                        overflow: hidden;
+                        transition: 0.2s;    
                     }
+                    &:hover{
+                        color: #e0e6eb;
+                        background: #105085;
+                        box-shadow: 0 0 10px #105085, 0 0 40px #105085, 0 0 80px #105085;
+                        transition-delay: 1s;
+                    }
+                    & span{
+                        position: absolute;
+                        display: block;
+                    }
+                    & span:nth-child(1){
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 2px;
+                        background: linear-gradient(90deg, transparent, #105085);
+                    }
+                    &:hover span:nth-child(1){
+                        left: 100%;
+                        transition: 1s;
+                    }
+                    & span:nth-child(3){
+                        bottom: 0;
+                        right: -100%;
+                        width: 100%;
+                        height: 2px;
+                        background: linear-gradient(270deg, transparent, #105085);
+                    }
+                    &:hover span:nth-child(3){
+                        right: 100%;
+                        transition: 1s;
+                        transition-delay: 0.5s;
+                    }
+                    & span:nth-child(2){
+                        top: -100%;
+                        right: 0;
+                        width: 2px;
+                        height: 100%;
+                        background: linear-gradient(180deg, transparent, #105085);
+                    }
+                    &:hover span:nth-child(2){
+                        top: 100%;
+                        transition: 1s;
+                        transition-delay: 0.25s;
+                    }
+                    & span:nth-child(4){
+                        bottom: -100%;
+                        left: 0;
+                        width: 2px;
+                        height: 100%;
+                        background: linear-gradient(3600deg, transparent, #105085);
+                    }
+                    &:hover span:nth-child(4){
+                        bottom: 100%;
+                        transition: 1s;
+                        transition-delay: 0.75s;
+                    }
+                    }
+                    
                 }
             }
         }
     }
 }
 
-.project{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-    background: #3b88cc;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    &_a{
-        position: relative;
-        display: inline-block;
-        padding: 15px 30px;
-        color: #0b304e;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        text-decoration: none;
-        font-size: 24px;
-        overflow: hidden;
-        transition: 0.2s;    
-    }
-    &_a:hover{
-        color: #e0e6eb;
-        background: #105085;
-        box-shadow: 0 0 10px #105085, 0 0 40px #105085, 0 0 80px #105085;
-        transition-delay: 1s;
-    }
-    &_a span{
-        position: absolute;
-        display: block;
-    }
-    &_a span:nth-child(1){
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #105085);
-    }
-    &_a:hover span:nth-child(1){
-        left: 100%;
-        transition: 1s;
-    }
-    &_a span:nth-child(3){
-        bottom: 0;
-        right: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(270deg, transparent, #105085);
-    }
-    &_a:hover span:nth-child(3){
-        right: 100%;
-        transition: 1s;
-        transition-delay: 0.5s;
-    }
-    &_a span:nth-child(2){
-        top: -100%;
-        right: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(180deg, transparent, #105085);
-    }
-    &_a:hover span:nth-child(2){
-        top: 100%;
-        transition: 1s;
-        transition-delay: 0.25s;
-    }
-    &_a span:nth-child(4){
-        bottom: -100%;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(3600deg, transparent, #105085);
-    }
-    &_a:hover span:nth-child(4){
-        bottom: 100%;
-        transition: 1s;
-        transition-delay: 0.75s;
-    }
-}
+
+    // &_button{
+    //     position: relative;
+    //     display: inline-block;
+    //     // padding: 15px 30px;
+    //     color: #0b304e;
+    //     text-transform: uppercase;
+    //     letter-spacing: 4px;
+    //     text-decoration: none;
+    //     // font-size: 24px;
+    //     overflow: hidden;
+    //     transition: 0.2s;    
+    // }
+    // &_button:hover{
+    //     color: #e0e6eb;
+    //     background: #105085;
+    //     box-shadow: 0 0 10px #105085, 0 0 40px #105085, 0 0 80px #105085;
+    //     transition-delay: 1s;
+    // }
+    // &_butotn span{
+    //     position: absolute;
+    //     display: block;
+    // }
+    // &_button span:nth-child(1){
+    //     top: 0;
+    //     left: -100%;
+    //     width: 100%;
+    //     height: 2px;
+    //     background: linear-gradient(90deg, transparent, #105085);
+    // }
+    // &_button:hover span:nth-child(1){
+    //     left: 100%;
+    //     transition: 1s;
+    // }
+    // &_button span:nth-child(3){
+    //     bottom: 0;
+    //     right: -100%;
+    //     width: 100%;
+    //     height: 2px;
+    //     background: linear-gradient(270deg, transparent, #105085);
+    // }
+    // &_button:hover span:nth-child(3){
+    //     right: 100%;
+    //     transition: 1s;
+    //     transition-delay: 0.5s;
+    // }
+    // &_button span:nth-child(2){
+    //     top: -100%;
+    //     right: 0;
+    //     width: 2px;
+    //     height: 100%;
+    //     background: linear-gradient(180deg, transparent, #105085);
+    // }
+    // &_button:hover span:nth-child(2){
+    //     top: 100%;
+    //     transition: 1s;
+    //     transition-delay: 0.25s;
+    // }
+    // &_button span:nth-child(4){
+    //     bottom: -100%;
+    //     left: 0;
+    //     width: 2px;
+    //     height: 100%;
+    //     background: linear-gradient(3600deg, transparent, #105085);
+    // }
+    // &_button:hover span:nth-child(4){
+    //     bottom: 100%;
+    //     transition: 1s;
+    //     transition-delay: 0.75s;
+    // }
+
 

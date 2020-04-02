@@ -97,7 +97,7 @@ video {
         line-height: 164.1%;
         font-weight: normal; }
       .header_box_klondike_items_link_button {
-        height: 65px;
+        height: 165px;
         width: 225px;
         background-color: #34547A;
         color: white;
@@ -108,71 +108,59 @@ video {
         border: none;
         margin-top: 5%;
         cursor: pointer; }
-
-.project {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
-  background: #3b88cc;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-  .project_a {
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    color: #0b304e;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    overflow: hidden;
-    transition: 0.2s; }
-  .project_a:hover {
-    color: #e0e6eb;
-    background: #105085;
-    box-shadow: 0 0 10px #105085, 0 0 40px #105085, 0 0 80px #105085;
-    transition-delay: 1s; }
-  .project_a span {
-    position: absolute;
-    display: block; }
-  .project_a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #105085); }
-  .project_a:hover span:nth-child(1) {
-    left: 100%;
-    transition: 1s; }
-  .project_a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #105085); }
-  .project_a:hover span:nth-child(3) {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s; }
-  .project_a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #105085); }
-  .project_a:hover span:nth-child(2) {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s; }
-  .project_a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(3600deg, transparent, #105085); }
-  .project_a:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s; }
+        .header_box_klondike_items_link_button {
+          position: relative;
+          display: inline-block;
+          color: #0b304e;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          text-decoration: none;
+          overflow: hidden;
+          transition: 0.2s; }
+        .header_box_klondike_items_link_button:hover {
+          color: #e0e6eb;
+          background: #105085;
+          box-shadow: 0 0 10px #105085, 0 0 40px #105085, 0 0 80px #105085;
+          transition-delay: 1s; }
+        .header_box_klondike_items_link_button span {
+          position: absolute;
+          display: block; }
+        .header_box_klondike_items_link_button span:nth-child(1) {
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, #105085); }
+        .header_box_klondike_items_link_button:hover span:nth-child(1) {
+          left: 100%;
+          transition: 1s; }
+        .header_box_klondike_items_link_button span:nth-child(3) {
+          bottom: 0;
+          right: -100%;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(270deg, transparent, #105085); }
+        .header_box_klondike_items_link_button:hover span:nth-child(3) {
+          right: 100%;
+          transition: 1s;
+          transition-delay: 0.5s; }
+        .header_box_klondike_items_link_button span:nth-child(2) {
+          top: -100%;
+          right: 0;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(180deg, transparent, #105085); }
+        .header_box_klondike_items_link_button:hover span:nth-child(2) {
+          top: 100%;
+          transition: 1s;
+          transition-delay: 0.25s; }
+        .header_box_klondike_items_link_button span:nth-child(4) {
+          bottom: -100%;
+          left: 0;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(3600deg, transparent, #105085); }
+        .header_box_klondike_items_link_button:hover span:nth-child(4) {
+          bottom: 100%;
+          transition: 1s;
+          transition-delay: 0.75s; }
